@@ -1,0 +1,33 @@
+
+@media all and (min-width : 769px) and (max-width : 992px){
+
+ #bloc_page{
+    margin: auto;
+    width: 95%;
+}
+.bloc-container{
+    display: flex;
+    flex-direction: column;
+    margin: -20px;
+}
+.all-card{
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.card{
+    min-width: 320px;
+}
+.card1{
+    min-width: 365px;
+}
+    
+footer {
+    flex-direction: column;
+}
+#aide{
+    margin-right: 0px;
+    margin-bottom: 40px;
+}
+
+
+}

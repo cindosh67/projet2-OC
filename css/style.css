@@ -1,0 +1,545 @@
+/* box-sizing*/
+
+.box {
+    box-sizing: border-box; /* Opera/IE 8+ */
+ /* box-sizing est appliqué seulement à cette classe */
+ }
+ 
+ * {
+  box-sizing: border-box;
+ /* box-sizing est appliqué à tous les éléments */
+ }
+/*---LE BODY---*/
+html{
+    scroll-behavior: smooth;
+}
+body 
+{
+    font-family: 'Raleway', sans-serif;
+	margin: 0px;
+}
+#bloc_page
+{
+  margin-left: 35px;
+  margin-right: 35px;
+  margin: auto;
+  width:95%;
+}
+
+
+/*---EN TÊTE---*/
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo img
+{
+    width: 130px;
+    margin-left: 10px;
+}
+header nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+header nav ul li
+{
+    padding: 50px 25px;
+    border-top: 4px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+header nav ul li:hover
+{
+   border-color: #0065FC;
+}
+header nav ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover
+{
+    color: #0065FC;
+}
+
+/*---ZONE DE RECHERCHE---*/
+
+.zone-recherche
+{
+    margin-top: auto;
+}
+.zone-recherche h1
+{
+    margin: auto;
+    font-size: x-large;
+}
+.zone-recherche p
+{
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+/*---LE FORMULAIRE DE RECHERCHE---*/
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+.recherche
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.recherche i::before
+{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+input::placeholder 
+{
+    color: #000000;
+    opacity: 1;
+    font-size: 20px;
+}
+#champ_recherche {
+    color: white;
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: none;
+    border-right: none;
+  }
+#bouton
+  {
+    background-color: #0065fc;
+    border-radius: 0 20px 20px 0px;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 15px 15px 15px;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+.zone-recherche .fa-magnifying-glass {
+    display: none;
+}
+/*---LA ZONE DES FILTRES---*/
+
+.ligne-filtre
+{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+	flex-wrap:wrap;
+}
+.ligne-filtre p
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+h3{
+    padding-left: 15px;
+}
+.bouton
+{
+    display: flex;
+    align-items: center;
+    padding: 0px 25px 0px 0px;
+    border-top: 3px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
+    border-right: 3px solid #F2F2F2;
+    border-radius: 30px;
+    margin-left: 30px;
+    height: 54px;
+}
+.bouton:hover
+{
+    background-color: #DEEBFF;
+}
+.bouton h3:hover
+{
+    text-decoration: none;
+    background-color: #DEEBFF;
+}
+.logo-filtre
+{
+    background-color: #DEEBFF;
+    
+    color: #0065FC;
+    border-radius: 100px;
+    text-align: center;
+}
+.fa-money-bill-1-wave
+{
+    padding: 18.5px 20.5px 18.5px 20.5px;
+}
+.fa-child-reaching {
+    padding: 18.5px 20.5px 18.5px 20.5px;
+}
+
+.fa-heart {
+    padding: 18.5px 18.5px 18.5px 18.5px;
+}
+
+.fa-dog {
+    padding: 18.5px 17.5px 18.5px 17.5px;
+}
+
+/*---INFO---*/
+
+#info
+{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+span
+{
+    margin-left: 15px;
+}
+.information
+{
+    background-color: #FFFFFF;
+    color: #0065FC;
+    border-radius: 50%;
+    border-top: 10px;
+    border: 2px solid #F2F2F2;
+    padding: 3px 10px 3px 10px;
+}
+
+/*---HEBERGEMENTS A MARSEILLE---*/
+.image-responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+h4{
+    font-size: 25px;
+}
+#one {
+	margin-top: 25px;
+}
+
+.bloc-container {
+	display:flex;
+	margin: -20px;
+}
+
+.bloc-container > .bloc-content {
+	margin: 20px;
+	padding: 30px;
+}
+
+.bloc-card2 {
+	background-color:#f2f2f2;
+	border-radius: 35px;
+}
+.bloc-card1 {
+	background-color:#f2f2f2;
+	border-radius: 35px;
+}
+
+.bloc-content-l2 {
+	flex:2;
+}
+
+.bloc-content-l1 {
+	flex:1;
+}
+.bloc-container-wrap {
+	flex-wrap: wrap;
+}
+.all-card
+{
+	margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card 
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 30px;
+    display: flex;
+    background-color: white;
+    margin: 15px;
+	flex: 1;
+	min-width: 360px;
+	padding: 5px;
+	flex-direction:column;
+}
+
+.card a {
+	width:100%;
+}
+.card .image-responsive {
+	width: 100%;
+	height: 256px;
+	border-radius: 25px 25px 0px 0px;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.all-card1
+{
+	margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.card.card-horizontal {
+	flex-direction:row;
+}
+
+.card.card-horizontal > a {
+	flex:2;
+}
+
+.card.card-horizontal .image-responsive {
+	border-radius: 25px 0px 0px 25px;
+	height:230px;
+}
+
+.card.card-horizontal > div.container {
+	flex:3;
+}
+
+.card:hover .image-responsive img
+{
+    width: 80%;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+	padding: 10px;
+}
+.container .prix-gras
+{
+    font-weight: 500;
+    margin-left: 0px;
+}
+.container h5
+{
+    display: flex;
+    margin: 0;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.container p
+{
+    margin: 0;
+    padding: 3px;
+    font-weight: 100;
+    flex: 1;
+}
+.fa-star
+{
+    background-color: white;
+    color: #0065FC;
+}
+.populaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.afficher
+{
+    margin-top: 15px;
+}
+.afficher h6
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+/*****ACTIVITE A MARSEILLE*****/
+
+#activite
+{
+    margin-top: 45px;
+    border-radius: 25px;
+}
+.container3 h5{
+    display: flex;
+    margin: 0;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.bloc-container3 {
+	display:flex;
+	margin: -20px;
+}
+
+.bloc-container3 > .bloc-content3 {
+	margin: 20px;
+}
+
+.bloc-content-l3 {
+	flex:2;
+}
+.bloc-container-wrap {
+	flex-wrap: wrap;
+}
+.all-card3
+{
+	margin: -13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.card1
+{
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 30px;
+    display: flex;
+    background-color: white;
+    margin: 15px;
+    flex: 1;
+    min-width: 360px;
+    flex-direction: column;
+    
+}
+.card1 .card-image1 {
+	width: 100%;
+	height: 630px;
+	border-radius: 25px 25px 0px 0px;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.duo-card3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.card2
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 30px;
+    display: flex;
+    margin: 15px;
+	flex-direction:column;
+    margin-bottom: 20px;
+}
+.card2 .card-image2 {
+	width: 100%;
+	height: 340px;
+	border-radius: 25px 25px 0px 0px;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.card3
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 30px;
+    display: flex;
+    background-color: white;
+    margin: 15px;
+	flex-direction:column;
+    flex: 1;
+}
+
+.card3 a {
+	width:100%;
+}
+.card3 .card-image3 {
+	width: 100%;
+	height: 184px;
+	border-radius: 25px 25px 0px 0px;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.card4
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 30px;
+    display: flex;
+    margin: 15px;
+    margin-bottom: 20px;
+	flex-direction:column;
+}
+.card4 .card-image4 {
+	width: 100%;
+	height: 250px;
+	border-radius: 25px 25px 0px 0px;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}.card5
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 30px;
+    display: flex;
+    margin: 15px;
+	flex-direction:column;
+}
+.card5 .card-image5 {
+	width: 100%;
+	height: 274px;
+	border-radius: 25px 25px 0px 0px;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+/*FOOTER*/
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#propos{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+#info2{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+#aide{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
